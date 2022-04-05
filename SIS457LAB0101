@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+int main()
+{
+	int x;
+	string biografia;
+	biografia = "hello world";
+	x = 0;
+	cout << biografia << endl;
+
+	do
+	{
+		cout << "desea seguir viendo la biografia??" << endl;
+		cout << "1) si" << endl;
+		cout << "2) no" << endl;
+		cin >> x;
+		if (x == 1)
+		{
+			cout << biografia << endl;
+		}
+		if (x != 1 and x != 2)
+		{
+			cout << "introduzca 1 o 2" << endl;
+		}
+	} while (x != 2);
+
+	system("pause");
+
+	return 0;
+}
